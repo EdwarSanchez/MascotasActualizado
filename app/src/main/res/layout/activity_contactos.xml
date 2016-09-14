@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.codedwar.edwar.mascotas.Contactos">
+
+    <include android:id="@+id/appBar"
+        layout="@layout/actionbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/area_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/appBar"
+        android:layout_margin="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/imvNombre"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/etNombre"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/area_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/area_nombre"
+        android:layout_margin="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/imvCorreo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/email1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/etCorreo"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/area_asunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/area_correo"
+        android:layout_margin="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/imvAsunto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/descripcion1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_asunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/etAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/etAsunto"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/area_asunto">
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEnviar"
+            android:theme="@style/miBoton"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

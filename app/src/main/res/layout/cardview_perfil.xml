@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardViewPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCorner="@dimen/cardRadius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivMascota"
+            android:layout_width="@dimen/tamano_mascota_weight"
+            android:layout_height="@dimen/tamano_mascota"
+            android:src="@drawable/mascota1"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCantidadLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cantidad_likes"
+                android:textStyle="bold"
+                android:textSize="@dimen/letra_descripciones"
+
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivHuesoCantidad"/>
+
+            <ImageView
+                android:id="@+id/ivHuesoCantidad"
+                android:layout_width="@dimen/tamano_hueso_perfil"
+                android:layout_height="@dimen/tamano_hueso_perfil"
+                android:src="@drawable/bone1"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

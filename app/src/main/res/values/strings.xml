@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mascotas</string>
+    <string name="m_contacto">Contacto</string>
+    <string name="m_acerca_de">Acerca de</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre">Nombre</string>
+    <string name="cantidad_likes">0</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etCorreo">Correo</string>
+    <string name="etAsunto">Asunto</string>
+    <string name="btnEnviar">Enviar</string>
+</resources>
